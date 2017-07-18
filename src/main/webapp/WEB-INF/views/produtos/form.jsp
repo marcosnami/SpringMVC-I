@@ -8,7 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Livros de java, Android, Iphone, PHP, Ruby e muito mais - Casa do código</title>
+    <meta charset="UTF-8">
+    <title>Livros de Java, Android, iPhone, Ruby, PHP e muito mais - Casa do Código</title>
 </head>
 <body>
 

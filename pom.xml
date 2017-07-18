@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.alura</groupId>
   <artifactId>SpringMVC1</artifactId>
@@ -9,16 +9,16 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <springframework.version>4.0.3.RELEASE</springframework.version>
+    <springframework.version>4.1.0.RELEASE</springframework.version>
     <jsp-api.version>2.1</jsp-api.version>
-    <jstl-api.version>1.2</jstl-api.version>
-    <jstl-impl.version>1.2</jstl-impl.version>
+    <jstl.version>1.2</jstl.version>
     <hsqldb.version>2.4.0</hsqldb.version>
     <validation-api.version>1.0.0.GA</validation-api.version>
     <log4j.version>1.2.16</log4j.version>
     <slf4j.version>1.6.1</slf4j.version>
     <aopalliance.version>1.0</aopalliance.version>
-    <commons.version>1.4</commons.version>
+    <commons-dbcp.version>1.4</commons-dbcp.version>
+    <commons-pool.version>1.5.4</commons-pool.version>
     <hibernate.version>4.3.0.Final</hibernate.version>
     <joda-time.version>2.0</joda-time.version>
     <mysql.version>5.1.17</mysql.version>
@@ -37,17 +37,36 @@
       <version>${springframework.version}</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.glassfish.web/javax.servlet.jsp.jstl -->
+    <dependency>
+      <groupId>org.glassfish.web</groupId>
+      <artifactId>javax.servlet.jsp.jstl</artifactId>
+      <version>1.2.4</version>
+    </dependency>
+
+<!--
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>${jsp-api.version}</version>
+    </dependency>
+-->
+
+<!--
     <dependency>
       <groupId>javax.servlet.jsp.jstl</groupId>
       <artifactId>jstl-api</artifactId>
-      <version>${jstl-api.version}</version>
+      <version>${jstl.version}</version>
     </dependency>
+-->
 
+<!--
     <dependency>
       <groupId>org.glassfish.web</groupId>
       <artifactId>jstl-impl</artifactId>
-      <version>${jstl-impl.version}</version>
+      <version>${jstl.version}</version>
     </dependency>
+-->
 
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -124,13 +143,13 @@
     <dependency>
       <groupId>commons-dbcp</groupId>
       <artifactId>commons-dbcp</artifactId>
-      <version>${commons.version}</version>
+      <version>${commons-dbcp.version}</version>
     </dependency>
 
     <dependency>
       <groupId>commons-pool</groupId>
       <artifactId>commons-pool</artifactId>
-      <version>${commons.version}</version>
+      <version>${commons-pool.version}</version>
     </dependency>
 
   </dependencies>
